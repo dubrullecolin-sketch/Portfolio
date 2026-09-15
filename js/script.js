@@ -1,19 +1,48 @@
 // =========================
-// ANIMATION AU SCROLL
+// ANIMATION + MENU ACTIF
 // =========================
 
 const sections = document.querySelectorAll(".section");
+const navLinks = document.querySelectorAll(".side-nav a");
 
 const observer = new IntersectionObserver(
     (entries) => {
 
         entries.forEach((entry) => {
 
+            // Animation d'apparition
             if (entry.isIntersecting) {
                 entry.target.classList.add("visible");
             }
 
         });
+
+        // Cherche la section actuellement au centre de l'écran
+        const visibleSections = [...sections].filter(section => {
+            const rect = section.getBoundingClientRect();
+
+            return (
+                rect.top <= window.innerHeight * 0.45 &&
+                rect.bottom >= window.innerHeight * 0.45
+            );
+        });
+
+        if (visibleSections.length > 0) {
+
+            const currentSection = visibleSections[0];
+
+            const currentId = currentSection.getAttribute("id");
+
+            navLinks.forEach((link) => {
+
+                link.classList.remove("active");
+
+                if (link.getAttribute("href") === `#${currentId}`) {
+                    link.classList.add("active");
+                }
+
+            });
+        }
 
     },
     {
@@ -21,16 +50,16 @@ const observer = new IntersectionObserver(
     }
 );
 
+
+// Observe toutes les sections
 sections.forEach((section) => {
     observer.observe(section);
 });
 
 
 // =========================
-// MENU MOBILE
+// CLIC SUR LE MENU
 // =========================
-
-const navLinks = document.querySelectorAll(".nav-links a");
 
 navLinks.forEach((link) => {
 
