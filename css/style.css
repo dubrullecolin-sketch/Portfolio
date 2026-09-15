@@ -1,0 +1,299 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b1120;
+    color: #f8fafc;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background: rgba(11, 17, 32, 0.85);
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 18px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #3b82f6;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 0.9rem;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #3b82f6;
+}
+
+
+/* =========================
+   HERO / ACCUEIL
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 120px 20px 80px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(37, 99, 235, 0.18),
+            transparent 45%
+        );
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.subtitle {
+    color: #3b82f6;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #3b82f6;
+}
+
+.description {
+    max-width: 700px;
+    margin: auto;
+
+    color: #94a3b8;
+    font-size: 1.1rem;
+}
+
+
+/* =========================
+   BOUTONS
+========================= */
+
+.hero-buttons {
+    margin-top: 35px;
+
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background: #2563eb;
+    color: white;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    background: #1d4ed8;
+}
+
+.button.secondary {
+    background: transparent;
+
+    border: 1px solid #334155;
+}
+
+.button.secondary:hover {
+    border-color: #3b82f6;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+    max-width: 1100px;
+    margin: auto;
+
+    padding: 110px 30px;
+}
+
+.section-title {
+    margin-bottom: 45px;
+}
+
+.section-title p {
+    color: #3b82f6;
+
+    font-size: 0.8rem;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    margin-top: 8px;
+}
+
+
+/* =========================
+   CARTES
+========================= */
+
+.card {
+    padding: 35px;
+
+    background: #111827;
+
+    border: 1px solid #1e293b;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(59, 130, 246, 0.5);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #94a3b8;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 30px;
+
+    text-align: center;
+
+    border-top: 1px solid #1e293b;
+
+    color: #64748b;
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .section {
+        padding: 80px 20px;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+}
