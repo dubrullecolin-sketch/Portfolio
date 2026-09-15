@@ -2,110 +2,241 @@
 <html lang="fr">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Portfolio - BTS SIO</title>
+    <title>Colin — Portfolio BTS SIO</title>
 
     <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 
 <body>
 
-    <!-- ==================== NAVIGATION ==================== -->
 
-    <header>
-        <nav class="navbar">
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
 
-            <a href="index.html" class="logo">
-                Portfolio
-            </a>
+    <aside class="sidebar">
 
-            <ul class="nav-links">
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#cv">CV</a></li>
-                <li><a href="#synthese">Synthèse</a></li>
-                <li><a href="#cybersecurite">Cybersécurité</a></li>
-                <li><a href="#domaine">Domaine</a></li>
-                <li><a href="#stage1">Stage 1</a></li>
-                <li><a href="#stage2">Stage 2</a></li>
-            </ul>
+        <div class="sidebar-top">
 
-        </nav>
-    </header>
+            <div class="logo">
+                <span>CO</span>
+            </div>
 
-
-    <!-- ==================== CONTENU PRINCIPAL ==================== -->
-
-    <main>
-
-        <!-- ==================== ACCUEIL ==================== -->
-
-        <section id="accueil" class="hero">
-
-           <div class="hero-content">
-
-        <p class="subtitle">
-            PORTFOLIO • BTS SIO
-        </p>
-
-        <h1>
-            Bonjour, je suis <span>Colin</span>
-        </h1>
-
-        <h2>
-            Étudiant en BTS Services Informatiques aux Organisations
-        </h2>
-
-        <p class="description">
-            Bienvenue sur mon portfolio. Vous trouverez ici mon parcours,
-            mes compétences, mes travaux en cybersécurité ainsi que mes
-            différentes expériences réalisées au cours de ma formation.
-        </p>
-
-        <div class="hero-buttons">
-
-            <a href="#cv" class="button">
-                Découvrir mon CV
-            </a>
-
-            <a href="#cybersecurite" class="button secondary">
-                Mes travaux
-            </a>
+            <div class="logo-text">
+                <strong>COLIN</strong>
+                <small>BTS SIO</small>
+            </div>
 
         </div>
 
+
+        <nav class="side-nav">
+
+            <a href="#accueil" class="active">
+                <span>01</span>
+                Accueil
+            </a>
+
+            <a href="#cv">
+                <span>02</span>
+                CV
+            </a>
+
+            <a href="#synthese">
+                <span>03</span>
+                Synthèse
+            </a>
+
+            <a href="#cybersecurite">
+                <span>04</span>
+                Cybersécurité
+            </a>
+
+            <a href="#domaine">
+                <span>05</span>
+                Domaine
+            </a>
+
+            <a href="#stage1">
+                <span>06</span>
+                Stage 01
+            </a>
+
+            <a href="#stage2">
+                <span>07</span>
+                Stage 02
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="#contact">
+                Contact
+            </a>
+
+            <div class="socials">
+
+                <a href="#" aria-label="GitHub">
+                    GH
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+                    IN
+                </a>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =========================
+         CONTENU
+    ========================== -->
+
+    <main class="content">
+
+
+        <!-- =========================
+             ACCUEIL
+        ========================== -->
+
+        <section id="accueil" class="hero section">
+
+            <div class="section-number">
+                01 / ACCUEIL
+            </div>
+
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    PORTFOLIO • BTS SERVICES INFORMATIQUES
+                </p>
+
+
+                <h1>
+                    Bonjour,<br>
+                    je suis <span>Colin.</span>
+                </h1>
+
+
+                <p class="hero-subtitle">
+                    Étudiant en BTS SIO
+                </p>
+
+
+                <p class="description">
+
+                    Bienvenue sur mon portfolio.
+
+                    <br>
+
+                    Je présente ici mon parcours,
+                    mes compétences, mes travaux en
+                    cybersécurité et mes expériences
+                    professionnelles.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a href="#cv" class="button">
+                        Découvrir mon parcours
+                        <span>↗</span>
+                    </a>
+
+                    <a href="#cybersecurite" class="button button-outline">
+                        Mes travaux
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="scroll-indicator">
+
+                <span></span>
+
+                SCROLL TO EXPLORE
+
+            </div>
+
         </section>
 
 
-        <!-- ==================== CV ==================== -->
+
+        <!-- =========================
+             CV
+        ========================== -->
 
         <section id="cv" class="section">
 
-            <div class="section-title">
+            <div class="section-number">
+                02 / CURRICULUM VITAE
+            </div>
 
-                <p>MON PARCOURS</p>
 
-                <h2>Curriculum Vitae</h2>
+            <div class="section-header">
+
+                <p class="eyebrow">
+                    MON PARCOURS
+                </p>
+
+                <h2>
+                    Curriculum<br>
+                    <span>Vitae.</span>
+                </h2>
 
             </div>
 
-            <div class="card">
 
-                <h3>Mon CV</h3>
+            <div class="cv-card">
 
-                <p>
-                    Retrouvez ici mon parcours scolaire, mes expériences
-                    professionnelles, mes compétences et mes informations
-                    personnelles.
-                </p>
+                <div class="cv-info">
 
-                <a href="CV-Colin-Dubrulle.pdf"
-                   class="button"
-                   target="_blank">
+                    <div class="big-number">
+                        CV
+                    </div>
 
-                    Télécharger mon CV
+                    <div>
 
+                        <h3>
+                            Mon parcours
+                        </h3>
+
+                        <p>
+                            Retrouvez mon parcours scolaire,
+                            mes expériences professionnelles,
+                            mes compétences et mes informations
+                            personnelles.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <a
+                    href="CV-Colin-Dubrulle.pdf"
+                    class="button"
+                    target="_blank"
+                >
+                    Ouvrir mon CV
+                    <span>↗</span>
                 </a>
 
             </div>
@@ -113,31 +244,52 @@
         </section>
 
 
-        <!-- ==================== SYNTHÈSE ==================== -->
+
+        <!-- =========================
+             SYNTHÈSE
+        ========================== -->
 
         <section id="synthese" class="section">
 
-            <div class="section-title">
+            <div class="section-number">
+                03 / SYNTHÈSE
+            </div>
 
-                <p>BTS SIO</p>
 
-                <h2>Synthèse</h2>
+            <div class="section-header">
+
+                <p class="eyebrow">
+                    BTS SIO
+                </p>
+
+                <h2>
+                    Synthèse de<br>
+                    <span>mon parcours.</span>
+                </h2>
 
             </div>
 
-            <div class="card">
 
-                <h3>Synthèse de mon parcours</h3>
+            <div class="content-card">
+
+                <div class="card-label">
+                    À VENIR
+                </div>
+
+                <h3>
+                    Synthèse de mes compétences
+                </h3>
 
                 <p>
-                    Cette section présentera la synthèse de mes compétences
-                    et des travaux réalisés au cours de mon BTS SIO.
+                    Cette section présentera la synthèse de mes
+                    compétences et des travaux réalisés au cours
+                    de mon BTS SIO.
                 </p>
 
                 <p>
-                    Elle permettra de mettre en relation mes compétences,
-                    mes projets et les différentes expériences réalisées
-                    pendant ma formation.
+                    Elle permettra de mettre en relation mes
+                    compétences, mes projets et les différentes
+                    expériences réalisées pendant ma formation.
                 </p>
 
             </div>
@@ -145,59 +297,166 @@
         </section>
 
 
-        <!-- ==================== CYBERSÉCURITÉ ==================== -->
+
+        <!-- =========================
+             CYBERSÉCURITÉ
+        ========================== -->
 
         <section id="cybersecurite" class="section">
 
-            <div class="section-title">
+            <div class="section-number">
+                04 / CYBERSÉCURITÉ
+            </div>
 
-                <p>INFORMATIQUE</p>
 
-                <h2>Cybersécurité</h2>
+            <div class="section-header">
+
+                <p class="eyebrow">
+                    INFORMATIQUE
+                </p>
+
+                <h2>
+                    Cyber<br>
+                    <span>security.</span>
+                </h2>
 
             </div>
 
-            <div class="card">
 
-                <h3>Mes travaux en cybersécurité</h3>
+            <div class="cyber-intro">
 
-                <p>
-                    Cette section regroupera mes travaux pratiques,
-                    projets, recherches et compétences liés à la
-                    cybersécurité.
-                </p>
+                <div>
 
-                <p>
-                    Les différents travaux seront présentés avec leur
-                    contexte, les outils utilisés et les compétences
-                    acquises.
-                </p>
+                    <p class="large-text">
+                        Une section dédiée à mes travaux,
+                        recherches et compétences en
+                        cybersécurité.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <p>
+                        Cette partie du portfolio sera
+                        progressivement complétée avec mes
+                        différents travaux pratiques, projets,
+                        recherches et expériences.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-grid">
+
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        01
+                    </div>
+
+                    <div class="project-status">
+                        À VENIR
+                    </div>
+
+                    <h3>
+                        Projet cybersécurité
+                    </h3>
+
+                    <p>
+                        Un futur travail ou projet réalisé
+                        dans le cadre de ma formation.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>CYBER</span>
+                        <span>BTS SIO</span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-number">
+                        02
+                    </div>
+
+                    <div class="project-status">
+                        À VENIR
+                    </div>
+
+                    <h3>
+                        Travail pratique
+                    </h3>
+
+                    <p>
+                        Un futur TP, exercice ou travail
+                        personnel lié à la sécurité informatique.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>SECURITY</span>
+                        <span>TP</span>
+
+                    </div>
+
+                </article>
+
 
             </div>
 
         </section>
 
 
-        <!-- ==================== DOMAINE À DÉFINIR ==================== -->
+
+        <!-- =========================
+             DOMAINE
+        ========================== -->
 
         <section id="domaine" class="section">
 
-            <div class="section-title">
+            <div class="section-number">
+                05 / DOMAINE
+            </div>
 
-                <p>MES COMPÉTENCES</p>
 
-                <h2>Domaine à définir</h2>
+            <div class="section-header">
+
+                <p class="eyebrow">
+                    SPÉCIALITÉ
+                </p>
+
+                <h2>
+                    Mon domaine<br>
+                    <span>à définir.</span>
+                </h2>
 
             </div>
 
-            <div class="card">
 
-                <h3>Une spécialité à définir</h3>
+            <div class="content-card">
+
+                <div class="card-label">
+                    À DÉFINIR
+                </div>
+
+                <h3>
+                    Une spécialité informatique
+                </h3>
 
                 <p>
-                    Cette section sera consacrée à un domaine informatique
-                    que nous choisirons ensemble en fonction de mon parcours,
-                    de mes compétences et de mes projets.
+                    Cette section sera consacrée à un domaine
+                    informatique que nous choisirons ensemble
+                    en fonction de mon parcours, de mes
+                    compétences et de mes projets.
                 </p>
 
             </div>
@@ -205,31 +464,52 @@
         </section>
 
 
-        <!-- ==================== STAGE 1 ==================== -->
+
+        <!-- =========================
+             STAGE 1
+        ========================== -->
 
         <section id="stage1" class="section">
 
-            <div class="section-title">
+            <div class="section-number">
+                06 / STAGE 01
+            </div>
 
-                <p>EXPÉRIENCE PROFESSIONNELLE</p>
 
-                <h2>Stage de première année</h2>
+            <div class="section-header">
+
+                <p class="eyebrow">
+                    EXPÉRIENCE PROFESSIONNELLE
+                </p>
+
+                <h2>
+                    Stage de<br>
+                    <span>première année.</span>
+                </h2>
 
             </div>
 
-            <div class="card">
 
-                <h3>Mon premier stage</h3>
+            <div class="content-card">
+
+                <div class="card-label">
+                    À VENIR
+                </div>
+
+                <h3>
+                    Mon premier stage
+                </h3>
 
                 <p>
-                    Cette section présentera mon stage de première année
-                    de BTS SIO.
+                    Cette section présentera mon stage de
+                    première année de BTS SIO.
                 </p>
 
                 <p>
-                    L'entreprise, les missions réalisées, les technologies
-                    utilisées, les difficultés rencontrées et les compétences
-                    mobilisées y seront présentées.
+                    L'entreprise, les missions réalisées,
+                    les technologies utilisées, les difficultés
+                    rencontrées et les compétences mobilisées
+                    y seront présentées.
                 </p>
 
             </div>
@@ -237,30 +517,51 @@
         </section>
 
 
-        <!-- ==================== STAGE 2 ==================== -->
+
+        <!-- =========================
+             STAGE 2
+        ========================== -->
 
         <section id="stage2" class="section">
 
-            <div class="section-title">
+            <div class="section-number">
+                07 / STAGE 02
+            </div>
 
-                <p>EXPÉRIENCE PROFESSIONNELLE</p>
 
-                <h2>Stage de deuxième année</h2>
+            <div class="section-header">
+
+                <p class="eyebrow">
+                    EXPÉRIENCE PROFESSIONNELLE
+                </p>
+
+                <h2>
+                    Stage de<br>
+                    <span>deuxième année.</span>
+                </h2>
 
             </div>
 
-            <div class="card">
 
-                <h3>Mon deuxième stage</h3>
+            <div class="content-card">
+
+                <div class="card-label">
+                    À VENIR
+                </div>
+
+                <h3>
+                    Mon deuxième stage
+                </h3>
 
                 <p>
-                    Cette section sera consacrée à mon stage de deuxième
-                    année de BTS SIO.
+                    Cette section sera consacrée à mon stage
+                    de deuxième année de BTS SIO.
                 </p>
 
                 <p>
-                    Elle sera complétée avec les missions, projets,
-                    technologies et compétences mobilisées durant ce stage.
+                    Elle sera complétée avec les missions,
+                    projets, technologies et compétences
+                    mobilisées durant ce stage.
                 </p>
 
             </div>
@@ -268,51 +569,72 @@
         </section>
 
 
-        <!-- ==================== CONTACT ==================== -->
 
-        <section id="contact" class="section">
+        <!-- =========================
+             CONTACT
+        ========================== -->
 
-            <div class="section-title">
+        <section id="contact" class="section contact-section">
 
-                <p>CONTACT</p>
+            <div class="section-number">
+                08 / CONTACT
+            </div>
 
-                <h2>Me contacter</h2>
+
+            <div class="section-header">
+
+                <p class="eyebrow">
+                    UNE QUESTION ?
+                </p>
+
+                <h2>
+                    Prenons<br>
+                    <span>contact.</span>
+                </h2>
 
             </div>
 
-            <div class="card">
+
+            <div class="contact-box">
 
                 <p>
-                    Vous pouvez me contacter pour toute question concernant
-                    mon parcours ou mes projets.
+                    Vous souhaitez en savoir plus sur mon
+                    parcours ou mes projets ?
                 </p>
 
-                <a href="mailto:ton-email@example.com"
-                   class="button">
-
-                    Envoyer un email
-
+                <a
+                    href="mailto:ton-email@example.com"
+                    class="contact-link"
+                >
+                    ton-email@example.com
+                    <span>↗</span>
                 </a>
 
             </div>
 
         </section>
 
+
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
+
+        <footer>
+
+            <div>
+                © 2026 COLIN — PORTFOLIO BTS SIO
+            </div>
+
+            <div>
+                CONÇU & DÉVELOPPÉ PAR COLIN
+            </div>
+
+        </footer>
+
+
     </main>
 
-
-    <!-- ==================== FOOTER ==================== -->
-
-    <footer>
-
-        <p>
-            © 2026 Colin - Portfolio BTS SIO
-        </p>
-
-    </footer>
-
-
-    <!-- ==================== JAVASCRIPT ==================== -->
 
     <script src="js/script.js"></script>
 
